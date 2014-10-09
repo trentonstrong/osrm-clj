@@ -36,4 +36,4 @@
 (defn batch-route
   "Route N routes, returning responses in same order as input."
   [routes]
-  (map #(deref (apply route %) routes)))
+  (map #(deref (apply route %)) routes))
